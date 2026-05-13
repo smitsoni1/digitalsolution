@@ -97,14 +97,16 @@ nav {
 }
 
 .logo img {
-    height: 45px;
+    height: 65px;
     width: auto;
+    object-fit: contain;
 }
 
 .logo span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--primary);
+    line-height: 1.2;
 }
 
 .logo span b {
