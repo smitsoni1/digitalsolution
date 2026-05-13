@@ -8,12 +8,28 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Hamburger Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+});
+
+// Close menu when a nav link is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('open');
+    });
+});
+
 // Smooth reveal animations on scroll
-const revealElements = document.querySelectorAll('.service-card, .team-member, .hero-text, .hero-image');
+const revealElements = document.querySelectorAll('.service-card, .team-member, .hero-text, .hero-image, .work-card');
 
 const revealOnScroll = () => {
-    const triggerBottom = window.innerHeight * 0.8;
-    
+    const triggerBottom = window.innerHeight * 0.85;
     revealElements.forEach(el => {
         const top = el.getBoundingClientRect().top;
         if (top < triggerBottom) {
@@ -31,9 +47,9 @@ revealElements.forEach(el => {
 });
 
 window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // Trigger once on load
+revealOnScroll();
 
-// Service card hover animation enhancement (optional)
+// Service card hover animation
 document.querySelectorAll('.service-card').forEach(card => {
     card.addEventListener('mouseenter', () => {
         card.querySelector('.service-icon').style.transform = 'scale(1.1) rotate(10deg)';
