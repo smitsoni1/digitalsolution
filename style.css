@@ -317,6 +317,10 @@ nav {
 .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
+.hamburger.active span {
+    background: var(--text-main) !important;
+}
+
 /* ============================================================
    PAGE HERO BANNER (for inner pages)
    ============================================================ */
