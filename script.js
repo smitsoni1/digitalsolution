@@ -199,19 +199,56 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // Simulate form submission (loading state)
+            // Submit form to Web3Forms
             if (submitBtn) {
                 submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                 submitBtn.disabled  = true;
             }
 
-            setTimeout(function () {
-                // Show success message
-                contactForm.style.display = 'none';
-                if (formSuccess) {
-                    formSuccess.style.display = 'block';
+            var budgetField = document.getElementById('budget');
+            var budgetVal   = budgetField ? budgetField.value : 'Not specified';
+            var serviceText = service ? service.options[service.selectedIndex].text : 'Not specified';
+
+            var formData = new FormData();
+            formData.append("access_key", "d25f9303-9b19-4e8f-9f05-525059321952");
+            formData.append("name", fullName.value);
+            formData.append("phone", phone.value);
+            formData.append("email", email.value);
+            formData.append("service", serviceText);
+            formData.append("budget", budgetVal);
+            formData.append("message", message.value);
+            formData.append("subject", "New Inquiry from " + fullName.value);
+            formData.append("from_name", "Digital Solutions");
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            })
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                if (data.success) {
+                    contactForm.style.display = 'none';
+                    if (formSuccess) {
+                        formSuccess.style.display = 'block';
+                    }
+                } else {
+                    alert("Something went wrong. Please try again or email us directly at dsteck.official@gmail.com.");
+                    if (submitBtn) {
+                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Inquiry';
+                        submitBtn.disabled  = false;
+                    }
                 }
-            }, 1500);
+            })
+            .catch(function (error) {
+                console.error("Error submitting form:", error);
+                alert("Connection error. Please check your internet connection and try again.");
+                if (submitBtn) {
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Inquiry';
+                    submitBtn.disabled  = false;
+                }
+            });
         });
 
         // Real-time field validation reset
