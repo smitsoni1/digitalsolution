@@ -209,6 +209,11 @@ header.hero-header:not(.scrolled) .logo-text .logo-bottom {
     color: var(--white);
 }
 
+header.hero-header:not(.scrolled) .logo img {
+    filter: brightness(0) invert(1);
+    transition: var(--transition);
+}
+
 header.hero-header:not(.scrolled) .hamburger span {
     background: var(--white);
 }
@@ -231,6 +236,7 @@ nav {
     height: 72px;
     width: auto;
     object-fit: contain;
+    transition: var(--transition);
 }
 
 .logo-text {
