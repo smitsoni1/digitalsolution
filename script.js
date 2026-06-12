@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             var budgetField = document.getElementById('budget');
-            var budgetVal   = budgetField ? budgetField.value : 'Not specified';
+            var budgetVal   = (budgetField && budgetField.value) ? budgetField.options[budgetField.selectedIndex].text : 'Not specified';
             var serviceText = service ? service.options[service.selectedIndex].text : 'Not specified';
 
             var formData = new FormData();
