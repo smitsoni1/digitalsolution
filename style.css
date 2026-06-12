@@ -297,6 +297,9 @@ nav {
     padding: 6px;
     border-radius: 8px;
     transition: var(--transition);
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .hamburger:hover { background: rgba(0,86,210,0.08); }
