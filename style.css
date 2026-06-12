@@ -190,6 +190,29 @@ header.always-white {
     border-bottom: 1px solid var(--border);
 }
 
+/* Home page hero header — white nav links on dark hero bg */
+header.hero-header:not(.scrolled) .nav-links li a {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+header.hero-header:not(.scrolled) .nav-links li a:hover,
+header.hero-header:not(.scrolled) .nav-links li a.active {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+header.hero-header:not(.scrolled) .logo-text .logo-top {
+    color: rgba(255, 255, 255, 0.70);
+}
+
+header.hero-header:not(.scrolled) .logo-text .logo-bottom {
+    color: var(--white);
+}
+
+header.hero-header:not(.scrolled) .hamburger span {
+    background: var(--white);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
