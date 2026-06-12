@@ -4,24 +4,36 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://smitsoni1.github.io/DIGITALSOLUTION/</loc>
-  <lastmod>2026-06-09T07:59:40+00:00</lastmod>
+  <lastmod>2026-06-12T10:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/privacy.html</loc>
-  <lastmod>2026-06-09T07:59:40+00:00</lastmod>
+  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/index.html</loc>
+  <lastmod>2026-06-12T10:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/about.html</loc>
+  <lastmod>2026-06-12T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/index.html</loc>
-  <lastmod>2026-06-09T07:59:41+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/services.html</loc>
+  <lastmod>2026-06-12T10:00:00+00:00</lastmod>
+  <priority>0.85</priority>
 </url>
-
+<url>
+  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/contact.html</loc>
+  <lastmod>2026-06-12T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://smitsoni1.github.io/DIGITALSOLUTION/privacy.html</loc>
+  <lastmod>2026-06-12T10:00:00+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
 
 </urlset>
