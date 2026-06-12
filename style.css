@@ -1695,6 +1695,15 @@ footer {
         padding: 14px 18px;
         font-size: 1.1rem;
         border-radius: var(--radius);
+        color: var(--text-main);
+    }
+    header.hero-header:not(.scrolled) .nav-links li a {
+        color: var(--text-main);
+    }
+    header.hero-header:not(.scrolled) .nav-links li a:hover,
+    header.hero-header:not(.scrolled) .nav-links li a.active {
+        color: var(--primary);
+        background: rgba(0, 86, 210, 0.07);
     }
     .nav-links li a.active::after { display: none; }
     .hamburger { display: flex; z-index: 999; }
