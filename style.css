@@ -1444,8 +1444,8 @@ textarea {
     line-height: 1.7;
 }
 
-.privacy-wrap a { color: var(--primary); font-weight: 600; }
-.privacy-wrap a:hover { text-decoration: underline; }
+.privacy-wrap a:not(.btn) { color: var(--primary); font-weight: 600; }
+.privacy-wrap a:not(.btn):hover { text-decoration: underline; }
 
 .privacy-last-updated {
     display: inline-flex;
