@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://smitsoni1.github.io/DIGITALSOLUTION/sitemap.xml

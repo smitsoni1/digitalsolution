@@ -1176,7 +1176,7 @@ nav {
     flex-shrink: 0;
 }
 
-.service-feature-item .feat-text h4 {
+.service-feature-item .feat-text h3 {
     font-size: 0.95rem;
     font-weight: 700;
     margin-bottom: 2px;
@@ -1269,7 +1269,7 @@ nav {
     color: var(--text-main);
 }
 
-.contact-social h4 {
+.contact-social h3 {
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -1526,7 +1526,7 @@ footer {
     transform: translateY(-4px);
 }
 
-.footer-col h4 {
+.footer-col h3 {
     font-size: 0.82rem;
     font-weight: 700;
     text-transform: uppercase;

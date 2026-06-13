@@ -1,0 +1,28 @@
+# Digital Solutions
+
+Digital Solutions is a premier digital agency based in Gujarat, India, specializing in custom Web Development, Android App Development, Windows Desktop Software, and Custom ERP Systems.
+
+## Key Details
+- **Location**: Gujarat, India
+- **CTO & Technical Operations**: Smit V Soni
+- **Managing Director & Business Operations**: Sneh N Moradiya
+- **Contact Email**: dsteck.official@gmail.com
+- **Phone Contacts**: +91 97143 36123, +91 98248 82580
+- **Official Website**: https://smitsoni1.github.io/DIGITALSOLUTION/
+
+## Services Offered
+
+### 1. Custom Web Development
+We create modern, responsive, and SEO-optimized websites, landing pages, corporate portfolios, and full-stack e-commerce platforms with secure payment gateways.
+
+### 2. Android App Development
+We build feature-rich Android mobile applications, handle Play Store publishing, design intuitive UI/UX, and integrate secure backend APIs.
+
+### 3. Windows Software Development
+We engineer custom desktop applications to automate and streamline industrial business workflows, billing processes, and inventory controls on Windows OS.
+
+### 4. Custom ERP Systems
+We design tailored ERP packages specifically for retail and wholesale jewellery showrooms, educational school fee logs, and manufacturing factories in Gujarat.
+
+### 5. Cross-Platform App Development
+We build high-performance mobile apps using Flutter and React Native, running on both Android and iOS from a single codebase.
