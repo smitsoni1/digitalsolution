@@ -1,6 +1,6 @@
 # Digital Solutions - Building Your Digital Future
 
-![Digital Solutions Banner](hero.png)
+![Digital Solutions Banner](hero-web.webp)
 
 Welcome to the official repository for the **Digital Solutions** corporate website. We are a software development agency dedicated to helping businesses grow through powerful digital products.
 
@@ -23,8 +23,8 @@ Welcome to the official repository for the **Digital Solutions** corporate websi
 - `privacy.html`: Dedicated privacy policy page.
 - `style.css`: Core design system and animations.
 - `script.js`: Interactive logic and scroll reveal effects.
-- `logo.png`: Official company branding.
-- `hero.png`: High-quality tech visual.
+- `logo-web.webp`: Official company branding.
+- `hero-web.webp`: High-quality tech visual.
 
 ## 👤 Founders
 - **Smit V Soni** - Co-Founder
