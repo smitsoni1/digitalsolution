@@ -335,5 +335,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    /* ========================================================
+       11. DYNAMIC LAST UPDATED DATE (for privacy.html)
+    ======================================================== */
+    var lastUpdatedEl = document.getElementById('last-updated-date');
+    if (lastUpdatedEl) {
+        var modString = document.lastModified;
+        if (modString) {
+            var modDate = new Date(modString);
+            if (!isNaN(modDate.getTime())) {
+                var months = [
+                    "January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"
+                ];
+                var day = modDate.getDate();
+                var month = months[modDate.getMonth()];
+                var year = modDate.getFullYear();
+                lastUpdatedEl.innerHTML = '<i class="fas fa-calendar-check"></i> Last Updated: ' + month + ' ' + day + ', ' + year;
+            }
+        }
+    }
+
     console.log('%c🚀 Digital Solutions Website Loaded!', 'color:#0056D2; font-weight:bold; font-size:14px;');
 });
